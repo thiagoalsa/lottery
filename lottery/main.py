@@ -2,13 +2,12 @@ import random
 from time import sleep
 from util import util
 
-# QUANTOS NUMEROS A PESSOA DESEJA JOGAR
-
+# QUANTITY OF BET NUMBERS
 
 while True:
-    quantidade_de_numeros = int(input('Quantas DEZENAS deseja apostar [minimo: 6 , maximo: 15]?  '))
-    if 5 < quantidade_de_numeros < 16:
-        quantidade_de_numeros = str(quantidade_de_numeros)
+    quantity_of_numbers = int(input('Quantas DEZENAS deseja apostar [min: 6 , max: 15]?  '))
+    if 5 < quantity_of_numbers < 16:
+        quantity_of_numbers = str(quantity_of_numbers)
         break
     else:
         print('Erro Digite entre 6 e 15:')
@@ -18,19 +17,19 @@ while True:
 
 lista_valores = {'6': 4.5, '7': 31.5, '8': 126, '9': 378, '10': 945, '11': 2079, '12': 4158, '13': 7722,
                  '14': 13513.5, '15': 22522.5}
-valor_aposta = lista_valores[f'{quantidade_de_numeros}']
+valor_aposta = lista_valores[f'{quantity_of_numbers}']
 print('-' * 40)
 print(f'O valor de cada aposta sera de R${valor_aposta}')
 sleep(3)
 print('-' * 40)
-print(f'Agora esta na hora de escolher os seus {quantidade_de_numeros} numeros. ')
+print(f'Agora esta na hora de escolher os seus {quantity_of_numbers} numeros. ')
 print('-' * 40)
 sleep(0.5)
 
 # COLETANDO OS NUMEROS DO JOGADOR
 
 numeros_escolhidos = []
-while len(numeros_escolhidos) != int(quantidade_de_numeros):
+while len(numeros_escolhidos) != int(quantity_of_numbers):
     escolha = int(input('Escolha um numero entre 1 e 60: '))
     if escolha in numeros_escolhidos:
         print('Erro voce ja escolheu esse numero.')
@@ -41,7 +40,7 @@ while len(numeros_escolhidos) != int(quantidade_de_numeros):
     else:
         numeros_escolhidos.append(escolha)
         print(f'Numeros escolhidos -> {numeros_escolhidos}')
-        print(f'Voce já escolheu {len(numeros_escolhidos)} de {quantidade_de_numeros}.')
+        print(f'Voce já escolheu {len(numeros_escolhidos)} de {quantity_of_numbers}.')
         print('-' * 40)
 
 # SORTEANDO OS NUMEROS
