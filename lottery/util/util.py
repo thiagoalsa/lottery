@@ -16,3 +16,6 @@ def match_number(numbers_drawn: list, numbers_chosen: list):
 
 def total_match_number(match_num: list):
     return len(match_num)
+
+def cambio(price: int, cambio = '£'):
+    return f'{cambio}{price:_.2f}'.replace('.', ',').replace('_', '.')

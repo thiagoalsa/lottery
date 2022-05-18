@@ -19,7 +19,7 @@ lista_valores = {'6': 4.5, '7': 31.5, '8': 126, '9': 378, '10': 945, '11': 2079,
                  '14': 13513.5, '15': 22522.5}
 valor_aposta = lista_valores[f'{quantity_of_numbers}']
 print('-' * 40)
-print(f'O valor de cada aposta sera de R${valor_aposta}')
+print(f'O valor de cada aposta sera de', util.cambio(valor_aposta))
 sleep(3)
 print('-' * 40)
 print(f'Agora esta na hora de escolher os seus {quantity_of_numbers} numeros. ')
@@ -84,4 +84,4 @@ print(f'Voce ganhou {quina} vezes na QUINA.')
 print('-' * 50)
 print(f'Voce ganhou {quadra} vezes na QUADRA.')
 print('-' * 50)
-print(f'O custo total das apostas foi de R${contador * valor_aposta}')
+print(f'O custo total das apostas foi de', util.cambio(contador * valor_aposta))
