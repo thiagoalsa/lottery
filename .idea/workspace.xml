@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09551ff7-9972-492c-9c92-bcfe898e5ece" name="Changes" comment="change for english">
+    <list default="true" id="09551ff7-9972-492c-9c92-bcfe898e5ece" name="Changes" comment="create def cambio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lottery/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lottery/util/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/util/util.py" afterDir="false" />
@@ -88,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652738028902</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create def cambio">
+      <created>1652864267038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652864267038</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="type hinting in util" />
     <MESSAGE value="change for english" />
-    <option name="LAST_COMMIT_MESSAGE" value="change for english" />
+    <MESSAGE value="create def cambio" />
+    <option name="LAST_COMMIT_MESSAGE" value="create def cambio" />
   </component>
 </project>

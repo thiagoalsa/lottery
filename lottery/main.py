@@ -5,12 +5,12 @@ from util import util
 # QUANTITY OF BET NUMBERS
 
 while True:
-    quantity_of_numbers = int(input('Quantas DEZENAS deseja apostar [min: 6 , max: 15]?  '))
+    quantity_of_numbers = int(input('How many numbers do you want to bet? [min: 6 , max: 15]?  '))
     if 5 < quantity_of_numbers < 16:
         quantity_of_numbers = str(quantity_of_numbers)
         break
     else:
-        print('Erro Digite entre 6 e 15:')
+        print_red
 
 
 # CALCULO DO VALOR DE CADA APOSTA
@@ -22,7 +22,7 @@ print('-' * 40)
 print(f'O valor de cada aposta sera de', util.cambio(valor_aposta))
 sleep(3)
 print('-' * 40)
-print(f'Agora esta na hora de escolher os seus {quantity_of_numbers} numeros. ')
+print(f'Select {quantity_of_numbers} numbers from 1-59. ')
 print('-' * 40)
 sleep(0.5)
 
@@ -56,14 +56,14 @@ quadra = 0
 # CONFERINDO OS NUMEROS
 
 while True:
-    sorteio = util.raffle(6, 60)
+    sorteio = util.raffle(6, 59)
     contador += 1
     print(f'{contador}º - {sorteio}')
 
     match = util.match_number(sorteio, numeros_escolhidos)
 
     if util.total_match_number(match) == 6:
-        print(f"Voce venceu na Sena com {contador} tentativas.")
+        print_green(f"Voce venceu na Sena com {contador} tentativas.")
         sena += 1
         break
     elif util.total_match_number(match) == 5:
