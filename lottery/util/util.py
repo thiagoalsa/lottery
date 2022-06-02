@@ -18,7 +18,7 @@ def total_match_number(match_num: list):
     return len(match_num)
 
 
-def cambio(price: int, cambio='£'):
+def cambio(price: int, cambio='R$'):
     return f'{cambio}{price:_.2f}'.replace('.', ',').replace('_', '.')
 
 
