@@ -23,9 +23,10 @@ def cambio(price: int, cambio='£'):
 
 
 def print_red(txt: str):
-    return f'\033[41m{txt}\033[m'
-
+    red = f'\033[41m{txt}\033[m'
+    print(red)
 
 def print_green(txt: str):
-    return f'\033[42m{txt}\033[m'
+    green = f'\033[42m{txt}\033[m'
+    print(green)
 

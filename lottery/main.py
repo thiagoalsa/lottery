@@ -10,60 +10,65 @@ while True:
         quantity_of_numbers = str(quantity_of_numbers)
         break
     else:
-        print_red
+        util.print_red('Error Enter between 6 and 15')
 
 
-# CALCULO DO VALOR DE CADA APOSTA
+# CALCULATION OF THE VALUE OF EACH BET
 
-lista_valores = {'6': 4.5, '7': 31.5, '8': 126, '9': 378, '10': 945, '11': 2079, '12': 4158, '13': 7722,
+list_of_values = {'6': 4.5, '7': 31.5, '8': 126, '9': 378, '10': 945, '11': 2079, '12': 4158, '13': 7722,
                  '14': 13513.5, '15': 22522.5}
-valor_aposta = lista_valores[f'{quantity_of_numbers}']
+value_bet = list_of_values[f'{quantity_of_numbers}']
 print('-' * 40)
-print(f'O valor de cada aposta sera de', util.cambio(valor_aposta))
-sleep(3)
+print(f'The value of each bet will be -> ', util.cambio(value_bet))
+sleep(0.5)
 print('-' * 40)
-print(f'Select {quantity_of_numbers} numbers from 1-59. ')
+print(f'Select {quantity_of_numbers} numbers from 1-60. ')
 print('-' * 40)
 sleep(0.5)
 
-# COLETANDO OS NUMEROS DO JOGADOR
+# COLLECTING PLAYER NUMBERS
 
-numeros_escolhidos = []
-while len(numeros_escolhidos) != int(quantity_of_numbers):
-    escolha = int(input('Escolha um numero entre 1 e 60: '))
-    if escolha in numeros_escolhidos:
-        print('Erro voce ja escolheu esse numero.')
-    elif escolha > 60:
-        print('Erro! Escolha apenas entre 1 e 60')
-    elif escolha < 1:
-        print('Erro! Escolha apenas entre 1 e 60')
+chosen_numbers = []
+
+while len(chosen_numbers) != int(quantity_of_numbers):
+    choice = int(input('Choose a number between 1 and 60: '))
+    if choice in chosen_numbers:
+        util.print_red('Error you already chose that number.')
+    elif choice > 60:
+        util.print_red('Error Choose only between 1 and 60.')
+    elif choice < 1:
+        util.print_red('Error Choose only between 1 and 60.')
     else:
-        numeros_escolhidos.append(escolha)
-        print(f'Numeros escolhidos -> {numeros_escolhidos}')
-        print(f'Voce já escolheu {len(numeros_escolhidos)} de {quantity_of_numbers}.')
+        chosen_numbers.append(choice)
+        print(f'Chosen numbers -> {chosen_numbers}')
+        print(f'You already chose {len(chosen_numbers)} of {quantity_of_numbers}.')
         print('-' * 40)
 
-# SORTEANDO OS NUMEROS
+# DRAW THE NUMBERS
 
-print(f' Seus numeros escolhidos foram {sorted(numeros_escolhidos)}')
-numeros_escolhidos = sorted(numeros_escolhidos)
-sleep(3)
-contador = 0
+print(f' Your chosen numbers were {sorted(chosen_numbers)}')
+chosen_numbers = sorted(chosen_numbers)
+sleep(1)
+
+# COUNTERS
+
+counter = 0
 sena = 0
 quina = 0
 quadra = 0
 
-# CONFERINDO OS NUMEROS
+# CHECKING THE NUMBERS
 
 while True:
-    sorteio = util.raffle(6, 59)
-    contador += 1
-    print(f'{contador}º - {sorteio}')
 
-    match = util.match_number(sorteio, numeros_escolhidos)
+    raffle = util.raffle(6, 60)
+    counter += 1
+    print(f'{counter}º - {raffle}')
+
+    match = util.match_number(raffle, chosen_numbers)
 
     if util.total_match_number(match) == 6:
-        print_green(f"Voce venceu na Sena com {contador} tentativas.")
+        util.print_green(f"You won in SENA with {counter} attempts.")
         sena += 1
         break
     elif util.total_match_number(match) == 5:
@@ -72,16 +77,16 @@ while True:
     elif util.total_match_number(match) == 4:
         quadra += 1
 
-    elif contador == 1000000:
+    elif counter == 1000000:
         break
 
 
-print(f'        ACABOU!      ')
+print(f'        FINISH!      ')
 print('-' * 50)
-print(f'Voce ganhou {sena} vez na SENA')
+print(f'You won {sena} time in SENA.')
 print('-' * 50)
-print(f'Voce ganhou {quina} vezes na QUINA.')
+print(f'You won {quina} times in QUINA.')
 print('-' * 50)
-print(f'Voce ganhou {quadra} vezes na QUADRA.')
+print(f'You won {quadra} times in QUADRA.')
 print('-' * 50)
-print(f'O custo total das apostas foi de', util.cambio(contador * valor_aposta))
+print(f'The total cost of the bets was', util.cambio(counter * value_bet))

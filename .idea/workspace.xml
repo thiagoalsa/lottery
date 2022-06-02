@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09551ff7-9972-492c-9c92-bcfe898e5ece" name="Changes" comment="create def cambio">
+    <list default="true" id="09551ff7-9972-492c-9c92-bcfe898e5ece" name="Changes" comment="create def print_red and print_green">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lottery/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lottery/util/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/util/util.py" afterDir="false" />
@@ -36,6 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -95,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652864267038</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create def print_red and print_green">
+      <created>1654169365467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654169365468</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +121,7 @@
     <MESSAGE value="type hinting in util" />
     <MESSAGE value="change for english" />
     <MESSAGE value="create def cambio" />
-    <option name="LAST_COMMIT_MESSAGE" value="create def cambio" />
+    <MESSAGE value="create def print_red and print_green" />
+    <option name="LAST_COMMIT_MESSAGE" value="create def print_red and print_green" />
   </component>
 </project>
