@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09551ff7-9972-492c-9c92-bcfe898e5ece" name="Changes" comment="Change variable name">
+    <list default="true" id="09551ff7-9972-492c-9c92-bcfe898e5ece" name="Changes" comment="Change '£' for 'R$' in def cambio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lottery/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654175646504</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Change '£' for 'R$' in def cambio">
+      <created>1654176798292</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654176798292</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +136,7 @@
     <MESSAGE value="create def cambio" />
     <MESSAGE value="create def print_red and print_green" />
     <MESSAGE value="Change variable name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change variable name" />
+    <MESSAGE value="Change '£' for 'R$' in def cambio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change '£' for 'R$' in def cambio" />
   </component>
 </project>
