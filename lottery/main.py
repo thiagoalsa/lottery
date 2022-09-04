@@ -92,3 +92,4 @@ print('-' * 50)
 print(f'The total cost of the bets was', util.cambio(counter * value_bet))
 print('-' * 50)
 print(f"it's been about {counter / 104:.0f} years.")
+
